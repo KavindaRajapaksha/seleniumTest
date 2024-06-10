@@ -14,12 +14,13 @@ Test Case
 
 
 import org.openqa.selenium.chrome.ChromeDriver;
+import org.openqa.selenium.edge.EdgeDriver;
 
 public class FirstTestCase {
     public static void main(String[] args){
 //        1.launch browser
 //        ChromeDriver driver=new ChromeDriver();
-          WebDriver driver=new ChromeDriver(); //upCasting
+          WebDriver driver=new EdgeDriver(); //upCasting
 
 //        2.open URL "https://demo.opencart.com/"
         driver.get("https://demo.opencart.com/");
