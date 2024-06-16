@@ -29,7 +29,5 @@ public class XpathDemo {
         //xpath with contains method
 //        driver.findElement(By.xpath(" ")).sendKeys("Kavinda");
 
-
-
     }
 }
