@@ -17,7 +17,7 @@ public class ExplicitWait {
         driver.get("https://opensource-demo.orangehrmlive.com/web/index.php/auth/login");
 
         driver.manage().window().maximize();
-
+//   driver.manage().timeouts().implicitlyWait(Duration.ofSeconds())
         // Correct usage of ExpectedConditions
         WebElement txtusername = wait.until(ExpectedConditions.visibilityOfElementLocated(By.xpath("//input[@placeholder='Username']")));
         WebElement loginButton=wait.until(ExpectedConditions.visibilityOfElementLocated(By.xpath("//div[@class='oxd-form-actions orangehrm-login-action']")));
@@ -28,6 +28,7 @@ public class ExplicitWait {
         txtusername.sendKeys("Admin");
         txtpassword.sendKeys("123");
         loginButton.click();
+        driver.close();
 
 
 
