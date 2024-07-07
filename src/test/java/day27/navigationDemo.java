@@ -44,7 +44,7 @@ public class navigationDemo {
         driver.navigate().back();
         String win2=driver.getWindowHandle();
         System.out.println(win2);
-        System.out.println(driver.getTitle());
+        System.out.println(driver.getTitle()  );
         driver.navigate().forward();
 
 
